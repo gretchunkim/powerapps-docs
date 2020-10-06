@@ -48,9 +48,9 @@ The **TabIndex** property has two recommended values:
 
 Navigation order generally goes from left-to-right, then top-to-bottom, in a "Z" pattern. The order is based on the **X** and **Y** property values of the controls. If controls are dynamically moved on the screen, for example by having a formula for **X** or **Y** based on a timer or other control, the navigation order will change dynamically too.
 
-Use the [**Enhanced group** control](https://powerapps.microsoft.com/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/) (experimental) to bundle controls that should be navigated together or to create columns in a "reverse-N" pattern.  At the top of the following example, the name fields are contained within an enhanced group control which causes navigation to proceed down before moving across.  At the bottom of the example, no group controls are used, and navigation proceeds across and then down as normal which is not intuitive given the control groupings. 
+Use the [**Container** control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-container) (experimental) to provides the ability to create hierachy.  At the top of the following example, the name fields are contained within container control which causes navigation to proceed down before moving across.  At the bottom of the example, no group controls are used, and navigation proceeds across and then down as normal which is not intuitive given the control groupings. 
 
-![Animation showing enhanced group control causing navigation to proceed down within a group before moving across](media/properties-accessibility/enhanced-group.gif)
+![Animation showing Container control causing navigation to proceed down within a group before moving across](media/properties-accessibility/enhanced-group.gif)
 
 Similarly, tabbing through containers such as [**Form**](control-form-detail.md) and [**Gallery**](control-gallery.md) controls will navigate through all elements of the container before proceeding to the next control outside of the container.  
 
